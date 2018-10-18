@@ -621,7 +621,7 @@ SELECT COALESCE(NULL,NULL,3,4,5) FROM dual 其返回结果为：3 。实际上�
 
 ### 3 、查看被锁表
 
-```plsql
+```sql
 SELECT l.session_id sid,  
            s.serial#,  
            l.locked_mode 锁模式,  
@@ -652,7 +652,7 @@ alter user 用户名 identified by 密码; -------------修改密码
 
 ### 5、sql技巧
 
-```plsql
+```sql
 --获取0-1随机小数
 SELECT dbms_random.value FROM dual;
 --生成0-100范围内的小数，包括0不包括100
@@ -736,28 +736,6 @@ SELECT * FROM xxx表  AS OF timestamp (systimestamp -10/1440);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 😱报错
-
-1、ORA-00918: 未明确定义列           查询的时候，有重名的字段。
 
 
 
