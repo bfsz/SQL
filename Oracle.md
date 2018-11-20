@@ -709,11 +709,15 @@ SELECT * FROM xxx表  AS OF timestamp (systimestamp -10/1440);
 
 
 
+### 6、正则校验
 
-
-
-
-
+```plsql
+--邮箱校验
+SELECT COUNT(*)
+  FROM dual
+ WHERE regexp_like('627261109@qq.com',
+                   '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$');
+```
 
 
 
